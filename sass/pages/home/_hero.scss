@@ -1,136 +1,157 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
+/* Hero Container */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 0;
+  max-width: 1200px;
+  margin:0 auto;
 
+  .hero-left {
+    width: 50%;
+  }
+
+  .hero-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hero Text */
 .hero-text {
-    text-align: left;
-    padding: 2rem;
-    
-    .intro {
-      font-weight: $font-weight-regular;
-      font-size: 1.2rem;
-      color: $black-color;
-      margin-bottom: 1rem;
-    }
-    
-    h1 {
-      font-size: 3.5rem;
-      font-weight: $font-weight-bold;
-      line-height: 1.2;
-      
-      span {
-        display: inline-block;
-        
-        &.highlight {
-          color: $primary-color; /* Highlighted words */
-        }
+  text-align: left;
+  padding: 2rem 0;
+
+  .intro {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+
+    span {
+      display: inline-block;
+
+      &.highlight {
+        color: #ff6347; /* Highlight color */
       }
-    }
-    
-    .sub-text {
-      font-size: 1.1rem;
-      margin-top: 1rem;
-      color: $light-black;
     }
   }
-  .search-section {
-    padding: 2rem 0;
-    .search-container {
+
+  .sub-text {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #666;
+  }
+}
+
+/* Search Section */
+.search-section {
+  padding: 1rem 0;
+
+  .search-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+
+    .search-bar {
       display: flex;
-      justify-content:flex-start;
-      margin-bottom: 2rem;
-  
-      .search-bar {
-        display: flex;
-        border: 1px solid $grey;
-        border-radius: 50px;
-        overflow: hidden;
-        width: 400px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        align-items: flex-start;
-        justify-content: flex-end;
-        flex-direction: row;
-  
-        input {display: flex;
-          border: none;
-          padding: 1rem;
-          flex: 1;
-          font-size: 1rem;
-          outline: none;
-          justify-content: end;
-        }
-  
-        button {display: flex;
-          background-color: $black;
-          color: white;
-          padding: 1rem 2rem;
-          border: none;
-          cursor: pointer;
-          transition: background-color 0.3s;
-          align-items: flex-start;
-  
-          &:hover {
-            background-color: darken($black, 10%);
-          }
+      border: 1px solid #ccc;
+      border-radius: 50px;
+      overflow: hidden;
+      width: 400px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      input {
+        flex: 1;
+        padding: 1rem;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken(#333, 10%);
         }
       }
-    }  
-}
- // Info Cards
- .info-cards {
+    }
+  }
+
+  .info-cards {
     display: flex;
-    justify-content:flex-start;
-    gap: 1rem;
+    justify-content: flex-start;
+    gap: 1.5rem;
     margin-top: 2rem;
+    color: #000;
 
     .card {
-      background-color: $light-grey;
+      background-color:$light-grey;
       border-radius: 10px;
       padding: 1.5rem;
       text-align: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       width: 180px;
 
-      img {display: flex;
-        justify-content: start;
+      img {
         width: 50px;
         margin-bottom: 1rem;
-        background-color: #000;;
+        background-color: #000;
+        
       }
 
       .stat {
         font-size: 1.2rem;
         font-weight: bold;
-        color: $black;
+        color: #333;
       }
     }
   }
-  .main-pizza {
-  
-  
+}
+
+/* Main Pizza Section */
+.main-pizza {
+  margin-bottom: 2rem;
+
+  img.hero-pizza {
     width: 300px;
-    margin: 10px auto;
-}
-.hero-pizza{
-display:flex
-
+  }
 }
 
-
-
-
+/* Pizza Gallery */
 .pizza-gallery {
-    display: flex;
-    justify-content:flex-end;
-    gap: 10px;
-    margin-top: 20px;
-}
-.pizza-gallery img {
-    width: 60px;
-    height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
-.pizza-gallery img:hover {
-    transform: scale(1.1);
-}
+

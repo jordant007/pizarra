@@ -1,9 +1,13 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
-.menu-header {
-    margin: 20px 0;
+.menu-header {display: flex;
+    margin: 100px;
+    padding: 50px;
     font-size: 2rem;
     color: $primary-color;
+    justify-content: center;
+    margin-top: 0
+    
   
     span {
       font-weight: bold;
@@ -66,23 +70,33 @@
       margin: 15px 0;
     }
   
-    .add-to-cart {
+    .add-to-cart {display: flex;
       background-color: $secondary-color;
       color: $background-color;
       border: none;
       padding: 10px 20px;
       cursor: pointer;
       font-size: 1rem;
+      align-items: center;
     }
   }
   
-  .view-more {display: flex;
-    justify-content: center;
+  .view-more{display: flex;
+    flex-direction: column;
     background-color: $primary-color;
     color: $background-color;
     border: none;
     padding: 10px 80px;
     cursor: pointer;
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 1px;
+    margin:100px;
+    width: 20;
+    border-radius: 10px;
+    
+  }
+  .button{
+display: flex;
+align-content: center;
+
   }
