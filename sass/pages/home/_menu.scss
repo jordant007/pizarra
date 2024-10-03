@@ -1,0 +1,88 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+.menu-header {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: $primary-color;
+  
+    span {
+      font-weight: bold;
+      color: $secondary-color;
+    }
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 30px;
+  
+    div {
+      font-weight: bold;
+      cursor: pointer;
+  
+      &.active {
+        color: $primary-color;
+        border-bottom: 3px solid $primary-color;
+      }
+    }
+  }
+  
+  .menu-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .pizza-item {
+    background-color: $background-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+  
+    h3 {
+      margin: 10px 0;
+    }
+  
+    p {
+      color: $text-color;
+    }
+  
+    .price {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 15px 0;
+    }
+  
+    .add-to-cart {
+      background-color: $secondary-color;
+      color: $background-color;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  }
+  
+  .view-more {display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    color: $background-color;
+    border: none;
+    padding: 10px 80px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }

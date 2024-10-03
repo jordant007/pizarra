@@ -1,0 +1,136 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+
+.hero-text {
+    text-align: left;
+    padding: 2rem;
+    
+    .intro {
+      font-weight: $font-weight-regular;
+      font-size: 1.2rem;
+      color: $black-color;
+      margin-bottom: 1rem;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      font-weight: $font-weight-bold;
+      line-height: 1.2;
+      
+      span {
+        display: inline-block;
+        
+        &.highlight {
+          color: $primary-color; /* Highlighted words */
+        }
+      }
+    }
+    
+    .sub-text {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      color: $light-black;
+    }
+  }
+  .search-section {
+    padding: 2rem 0;
+    .search-container {
+      display: flex;
+      justify-content:flex-start;
+      margin-bottom: 2rem;
+  
+      .search-bar {
+        display: flex;
+        border: 1px solid $grey;
+        border-radius: 50px;
+        overflow: hidden;
+        width: 400px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: row;
+  
+        input {display: flex;
+          border: none;
+          padding: 1rem;
+          flex: 1;
+          font-size: 1rem;
+          outline: none;
+          justify-content: end;
+        }
+  
+        button {display: flex;
+          background-color: $black;
+          color: white;
+          padding: 1rem 2rem;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          align-items: flex-start;
+  
+          &:hover {
+            background-color: darken($black, 10%);
+          }
+        }
+      }
+    }  
+}
+ // Info Cards
+ .info-cards {
+    display: flex;
+    justify-content:flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .card {
+      background-color: $light-grey;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 180px;
+
+      img {display: flex;
+        justify-content: start;
+        width: 50px;
+        margin-bottom: 1rem;
+        background-color: #000;;
+      }
+
+      .stat {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $black;
+      }
+    }
+  }
+  .main-pizza {
+  
+  
+    width: 300px;
+    margin: 10px auto;
+}
+.hero-pizza{
+display:flex
+
+}
+
+
+
+
+.pizza-gallery {
+    display: flex;
+    justify-content:flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+.pizza-gallery img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.pizza-gallery img:hover {
+    transform: scale(1.1);
+}
