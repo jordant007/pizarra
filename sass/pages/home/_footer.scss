@@ -101,95 +101,95 @@
   /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .footer {
-    flex-wrap: wrap; /* Allow footer items to wrap */
-    justify-content: center; /* Center-align items */
+    flex-wrap: wrap; 
+    justify-content: center; 
     padding: 30px 20px;
   }
 
   .stay-connected, .quick-links, .subscribe {
-    margin-bottom: 30px; /* Add some spacing between sections */
-    align-items: center; /* Center the contents */
+    margin-bottom: 30px; 
+    align-items: center; 
   }
 
   .social-icons {
-    justify-content: center; /* Center-align the social media icons */
+    justify-content: center;
   }
 
   .logo {
-    font-size: 24px; /* Adjust the logo size */
+    font-size: 24px; 
   }
 
   .stay-connected h3, .quick-links h3, .subscribe h3 {
-    text-align: center; /* Center-align section titles */
+    text-align: center; 
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Stack the footer items vertically */
+    flex-direction: column; 
     align-items: center;
-    text-align: center; /* Center-align all text */
+    text-align: center; 
     padding: 20px;
   }
 
   .stay-connected, .quick-links, .subscribe {
-    width: 100%; /* Ensure full width for all sections */
+    width: 100%; 
     align-items: center;
   }
 
   .social-icons {
-    gap: 10px; /* Reduce the gap between social icons */
+    gap: 10px; 
   }
 
   .quick-links ul {
-    padding-left: 0; /* Remove default padding from the list */
+    padding-left: 0;
   }
 
   .quick-links li {
     margin-bottom: 8px;
-    font-size: 0.9rem; /* Adjust font size for quick links */
+    font-size: 0.9rem; 
   }
 
   .subscribe form {
-    flex-direction: column; /* Stack the input and button vertically */
+    flex-direction: column; 
     input[type="email"] {
-      width: 100%; /* Full width for the input */
-      margin-bottom: 10px; /* Add space between input and button */
-      border-radius: 4px; /* Make it fully rounded */
+      width: 100%; 
+      margin-bottom: 10px; 
+      border-radius: 4px; 
     }
 
     button {
-      width: 100%; /* Full width for the button */
-      border-radius: 4px; /* Fully rounded button */
+      width: 100%; 
+      border-radius: 4px; 
     }
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 15px; /* Less padding for very small screens */
+    padding: 15px; 
   }
 
   .logo {
-    font-size: 20px; /* Further reduce logo size */
+    font-size: 20px; 
   }
 
   .stay-connected h3, .quick-links h3, .subscribe h3 {
-    font-size: 1rem; /* Smaller font size for section headings */
+    font-size: 1rem; 
   }
 
   .social-icons img {
-    width: 40px; /* Reduce the size of social media icons */
+    width: 40px; 
   }
 
   .quick-links li {
-    font-size: 0.8rem; /* Further reduce the font size for links */
+    font-size: 0.8rem; 
   }
 
   .subscribe form {
     input[type="email"], button {
-      font-size: 0.9rem; /* Smaller font size for input and button */
+      font-size: 0.9rem;
     }
   }
 }
