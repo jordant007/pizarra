@@ -221,10 +221,10 @@ nav .nav-right .fa-bars {
     margin-top: 2rem;
   }
   .hero-container .main-pizza img.hero-pizza {
-    width: 250px; /* Reduce pizza size on smaller screens */
+    width: 250px;
   }
   .hero-container .pizza-gallery {
-    gap: 0.5rem; /* Adjust the gap between pizza gallery items */
+    gap: 0.5rem;
   }
   .hero-container .pizza-gallery img {
     width: 80px;
@@ -233,10 +233,10 @@ nav .nav-right .fa-bars {
 }
 @media (max-width: 480px) {
   .hero-text h1 {
-    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    font-size: 2.5rem;
   }
   .sub-text {
-    font-size: 1rem; /* Adjust sub-text font size */
+    font-size: 1rem;
   }
   .search-container .search-bar {
     width: 300px;
@@ -362,28 +362,28 @@ nav .nav-right .fa-bars {
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .menu-section {
-    gap: 30px; /* Reduce gap for smaller screens */
+    gap: 30px;
   }
   .pizza-item {
-    width: 200px; /* Reduce width of pizza items */
+    width: 200px;
   }
   .pizza-item img {
-    width: 180px; /* Adjust pizza image size */
+    width: 180px;
     height: 180px;
   }
 }
 @media (max-width: 768px) {
   .menu-section {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column;
     align-items: center;
   }
   .pizza-item {
-    width: 80%; /* Set a relative width for better scaling */
+    width: 80%;
     margin-bottom: 20px;
   }
   .pizza-item img {
     width: 150px;
-    height: 150px; /* Adjust pizza image size */
+    height: 150px;
   }
   .view-more {
     margin-left: 0;
@@ -392,17 +392,17 @@ nav .nav-right .fa-bars {
 }
 @media (max-width: 480px) {
   .menu-header {
-    font-size: 1.5rem; /* Reduce header size */
+    font-size: 1.5rem;
   }
   .pizza-item {
     width: 90%;
   }
   .pizza-item img {
     width: 130px;
-    height: 130px; /* Adjust image size further for mobile */
+    height: 130px;
   }
   .add-to-cart {
-    font-size: 0.9rem; /* Adjust button size */
+    font-size: 0.9rem;
   }
 }
 .section-container {

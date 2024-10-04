@@ -169,11 +169,11 @@
     }
 
     .main-pizza img.hero-pizza {
-      width: 250px; /* Reduce pizza size on smaller screens */
+      width: 250px; 
     }
 
     .pizza-gallery {
-      gap: 0.5rem; /* Adjust the gap between pizza gallery items */
+      gap: 0.5rem; 
       
       img {
         width: 80px;
@@ -185,11 +185,11 @@
 
 @media (max-width: 480px) {
   .hero-text h1 {
-    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    font-size: 2.5rem; 
   }
 
   .sub-text {
-    font-size: 1rem; /* Adjust sub-text font size */
+    font-size: 1rem; 
   }
 
   .search-container {
