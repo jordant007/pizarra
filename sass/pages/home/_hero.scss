@@ -14,7 +14,7 @@
   }
 
   .hero-right {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@
     .search-bar {
       display: flex;
       border: 1px solid #ccc;
-      border-radius: 50px;
+      border-radius: 10px;
       overflow: hidden;
       width: 400px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -152,6 +152,64 @@
     &:hover {
       transform: scale(1.1);
     }
+  }
+}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+
+    .hero-left, .hero-right {
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero-right {
+      margin-top: 2rem;
+    }
+
+    .main-pizza img.hero-pizza {
+      width: 250px; /* Reduce pizza size on smaller screens */
+    }
+
+    .pizza-gallery {
+      gap: 0.5rem; /* Adjust the gap between pizza gallery items */
+      
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 1rem; /* Adjust sub-text font size */
+  }
+
+  .search-container {
+    .search-bar {
+      width: 300px; 
+    }
+
+    input {
+      padding: 0.8rem; 
+    }
+
+    button {
+      padding: 0.8rem 1.5rem; 
+    }
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }
 

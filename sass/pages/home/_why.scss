@@ -15,7 +15,7 @@
   }
   
   .content {
-    max-width: 170%;
+    max-width: 200%;
     padding-left: 20px;
   
     h2 {
@@ -78,3 +78,102 @@
       }
     }
   }
+  /* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .section-container {
+    flex-direction: column; /* Stack the image and content vertically */
+    padding: 20px;
+  }
+
+  .image-container {
+    margin-bottom: 20px; /* Add space between the image and content */
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding-left: 0;
+    text-align: center; /* Center-align text for medium screens */
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .features {
+    gap: 15px;
+  }
+  
+  .feature-icon {
+    padding: 10px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    h1 {
+      font-size: 1.8rem; /* Adjust heading size for smaller screens */
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem; /* Reduce paragraph size */
+    }
+  }
+
+  .features {
+    gap: 10px; /* Reduce gap between feature items */
+  }
+
+  .feature {
+    padding: 10px; /* Adjust padding for feature items */
+  }
+
+  .feature-icon {
+    padding: 8px; /* Smaller icons */
+    img {
+      width: 80px; /* Adjust icon size */
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section-container {
+    padding: 10px;
+  }
+
+  .content {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .features {
+    gap: 5px; 
+  }
+
+  .feature-icon {
+    padding: 5px;
+    img {
+      width: 60px; 
+    }
+  }
+
+  .feature-text h3 {
+    font-size: 1rem; 
+  }
+
+  .feature-text p {
+    font-size: 0.8rem;
+  }
+}

@@ -17,7 +17,8 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
   }
   
   .support-item {
@@ -55,3 +56,77 @@
     margin-bottom: 10px;
   }
   
+  /* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .support-container {
+    flex-wrap: wrap; /* Allow the support items to wrap */
+    justify-content: center; /* Center-align the items */
+    gap: 30px; /* Reduce the gap between items */
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .support-item {
+    width: 200px; /* Adjust the width of each item for smaller screens */
+    padding: 15px;
+    
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .help-text, .support-section {
+    text-align: center; /* Center-align headings */
+    font-size: 1.8rem; /* Adjust font size for headings */
+  }
+}
+
+@media (max-width: 768px) {
+  .support-container {
+    flex-direction: column; /* Stack the support items vertically */
+    align-items: center;
+    gap: 20px; /* Further reduce gap between items */
+  }
+
+  .support-item {
+    width: 100%; /* Make items take full width on smaller screens */
+    padding: 10px;
+    h3 {
+      font-size: 14px; /* Further reduce the font size for the titles */
+    }
+  }
+
+  .help-text {
+    font-size: 1.5rem; /* Adjust the size of the help text */
+  }
+
+  .support-section {
+    font-size: 20px; /* Adjust the size of the main heading */
+  }
+}
+
+@media (max-width: 480px) {
+  .support-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .support-item {
+    width: 100%;
+    padding: 10px;
+    h3 {
+      font-size: 1.2rem; 
+    }
+    p, a {
+      font-size: 0.9rem; 
+    }
+  }
+
+  .help-text {
+    font-size: 1.2rem; 
+  }
+
+  .support-section {
+    font-size: 18px;
+  }
+}
